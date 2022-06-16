@@ -16,23 +16,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2g-fL-hnW">
-                                <rect key="frame" x="20" y="213" width="374" height="119"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2g-fL-hnW">
+                                <rect key="frame" x="20" y="213" width="374" height="122.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="9u4-50-9m5"/>
+                                    <constraint firstAttribute="height" constant="122.5" id="Bxa-OD-2j4"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2r3-t2-rvo">
-                                <rect key="frame" x="20" y="389" width="374" height="119"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2r3-t2-rvo">
+                                <rect key="frame" x="20" y="388.5" width="374" height="119"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="119" id="WzL-gr-AOc"/>
+                                    <constraint firstAttribute="width" constant="374" id="hqh-Aq-FzN"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLn-k2-OSM">
-                                <rect key="frame" x="152" y="729" width="110" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLn-k2-OSM">
+                                <rect key="frame" x="163.5" y="729" width="87.5" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="New Joke"/>
                                 <connections>
@@ -42,6 +47,16 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mLn-k2-OSM" secondAttribute="bottom" constant="102" id="8fW-Yz-QIc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F2g-fL-hnW" secondAttribute="trailing" constant="20" id="Dry-ee-g7O"/>
+                            <constraint firstItem="2r3-t2-rvo" firstAttribute="top" secondItem="F2g-fL-hnW" secondAttribute="bottom" constant="53" id="Kwo-hk-70h"/>
+                            <constraint firstItem="2r3-t2-rvo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Mb2-k9-jzr"/>
+                            <constraint firstItem="F2g-fL-hnW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="X72-NI-5rN"/>
+                            <constraint firstItem="F2g-fL-hnW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="169" id="h3u-ly-zio"/>
+                            <constraint firstItem="2r3-t2-rvo" firstAttribute="leading" secondItem="F2g-fL-hnW" secondAttribute="leading" id="lhM-24-fkF"/>
+                            <constraint firstItem="2r3-t2-rvo" firstAttribute="centerX" secondItem="mLn-k2-OSM" secondAttribute="centerX" id="mfg-8J-f3Y"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="punchlineLabel" destination="2r3-t2-rvo" id="riZ-ij-tum"/>

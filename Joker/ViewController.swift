@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Joker
 //
-//  Created by anna on 16.06.2022.
+//  Created by anna on 10.06.2022.
 //
 
 import UIKit
@@ -17,7 +17,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         parseJSON()
-
     }
     
     @IBAction func generateNewJoke(_ sender: UIButton) {
