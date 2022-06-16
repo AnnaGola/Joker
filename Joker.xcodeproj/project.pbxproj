@@ -14,6 +14,7 @@
 		AFAB825A285B69C90072E9CE /* Joker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFAB8258285B69C90072E9CE /* Joker.xcdatamodeld */; };
 		AFAB825C285B69D10072E9CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFAB825B285B69D10072E9CE /* Assets.xcassets */; };
 		AFAB825F285B69D10072E9CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFAB825D285B69D10072E9CE /* LaunchScreen.storyboard */; };
+		AFAB8267285B6FCB0072E9CE /* JokeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAB8266285B6FCB0072E9CE /* JokeData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		AFAB825B285B69D10072E9CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFAB825E285B69D10072E9CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFAB8260285B69D10072E9CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFAB8266285B6FCB0072E9CE /* JokeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				AFAB824F285B69C90072E9CE /* AppDelegate.swift */,
 				AFAB8251285B69C90072E9CE /* SceneDelegate.swift */,
 				AFAB8253285B69C90072E9CE /* ViewController.swift */,
+				AFAB8266285B6FCB0072E9CE /* JokeData.swift */,
 				AFAB8255285B69C90072E9CE /* Main.storyboard */,
 				AFAB825B285B69D10072E9CE /* Assets.xcassets */,
 				AFAB825D285B69D10072E9CE /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			files = (
 				AFAB8254285B69C90072E9CE /* ViewController.swift in Sources */,
 				AFAB825A285B69C90072E9CE /* Joker.xcdatamodeld in Sources */,
+				AFAB8267285B6FCB0072E9CE /* JokeData.swift in Sources */,
 				AFAB8250285B69C90072E9CE /* AppDelegate.swift in Sources */,
 				AFAB8252285B69C90072E9CE /* SceneDelegate.swift in Sources */,
 			);
