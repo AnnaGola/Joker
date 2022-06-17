@@ -29,7 +29,7 @@ class ViewController: UIViewController {
             fatalError("fail")
         }
         let session = URLSession(configuration: .default)
-        let task = session.dataTask(with: url) { /*[self]*/ data, response, error in
+        let task = session.dataTask(with: url) { data, response, error in
             guard data != nil && error == nil else { return }
             
             do {
@@ -37,7 +37,10 @@ class ViewController: UIViewController {
                 self.joke = try JSONDecoder().decode(Joke.self, from: jokeData)
                 DispatchQueue.main.async {
                     self.setupLabel.text = self.joke?.setup
-                    self.punchlineLabel.text = self.joke?.delivery
+                    self.punchlineLabel.text = ""
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                        self.punchlineLabel.text = self.joke?.delivery
+                    }
                 }
             } catch let error {
                 print(error)
