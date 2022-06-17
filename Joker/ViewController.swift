@@ -38,7 +38,7 @@ class ViewController: UIViewController {
                 DispatchQueue.main.async {
                     self.setupLabel.text = self.joke?.setup
                     self.punchlineLabel.text = ""
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                         self.punchlineLabel.text = self.joke?.delivery
                     }
                 }
