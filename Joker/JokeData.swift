@@ -2,7 +2,7 @@
 //  JokeData.swift
 //  Joker
 //
-//  Created by anna on 16.06.2022.
+//  Created by anna on 10.06.2022.
 //
 
 import Foundation
